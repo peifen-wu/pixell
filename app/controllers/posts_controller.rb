@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
-before_action :authenticate_user!
-before_action :set_post, only: [:show, :edit, :update, :destroy]
+
+
+  before_action :set_post, only: [:show, :edit, :update, :destroy] 
+  before_action :authenticate_user!
+  before_action :validate_user, only: [:edit, :destroy]
+
 
     def index
         @posts = Post.all
@@ -45,6 +49,13 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
 
     def set_post
         @post = Post.find(params[:id])
+    end
+
+    def validate_user
+        unless current_user == @post.user
+        flash[:alert] = "That post doesn't belong to you!"
+        redirect_to root_path
+        end
     end
 
     def show
