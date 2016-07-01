@@ -17,22 +17,38 @@
 @import "bootstrap";
 
 body {  
-  background-color: #fafafa;
+  background-image: url(http://67.media.tumblr.com/12951d4aec33d45407a7da8326ec4ccd/tumblr_o9bipmaa3A1tf8vylo1_1280.png) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+  /*background-color: #fafafa;*/
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .navbar-brand {
   a {
-    color: #125688;
+    color: #eeeeee;
   }
 }
 
 .navbar-default {
-  background-color: #fff;
+  border-color: #333333; 
+  background-color: #333333;
+  color: #eee
   height: 54px;
-  .navbar-nav li a {
-    color: #125688;
+}
+
+.navbar-nav li a {
+    color: #eee;
   }
+
+  .navbar-default .navbar-nav>li>a {
+    color: #eee
+  }
+
+  nav .navbar-nav a:hover { 
+    background-color: yellow;
 }
 
 .navbar-container {
@@ -92,4 +108,23 @@ body {
 .edit-links {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+form{
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  padding: 25px;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+    text-align: center;
+    color: #000
+    text-decoration: none;
 }
