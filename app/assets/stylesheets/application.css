@@ -22,20 +22,19 @@ body {
 			background-repeat:  no-repeat;
 			background-attachment: fixed;
 			background-size:  cover;
-  /*background-color: #fafafa;*/
-  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-.navbar-brand {
-  a {
+.navbar-brand a {
+
     color: #eeeeee;
   }
-}
+
 
 .navbar-default {
   border-color: #333333; 
   background-color: #333333;
-  color: #eee
+  color: #eee;
   height: 54px;
 }
 
@@ -44,12 +43,10 @@ body {
   }
 
   .navbar-default .navbar-nav>li>a {
-    color: #eee
+    color: #eee;
   }
 
-  nav .navbar-nav a:hover { 
-    background-color: yellow;
-}
+ 
 
 .navbar-container {
   width: 640px;
@@ -124,7 +121,6 @@ h2 {
 }
 
 a {
-    text-align: center;
-    color: #000
+    color: #fff;
     text-decoration: none;
 }
